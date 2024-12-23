@@ -1,10 +1,6 @@
 import React, { useContext } from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
+
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import {Link} from 'react-scroll'
@@ -21,19 +17,18 @@ const Works = () => {
         <div className="awesome">
           {/* dark Mode */}
           <span style={{ color: darkMode ? "white" : "" }}>
-            Works for All these
+            Work using All these
           </span>
-          <span>Brands & Clients</span>
-          <spane>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
+          <span>Tools & Technologies</span>
+          <span style={{fontSize:'16px'}}>
+          I have experience building full-stack web applications using React.js for the frontend, Express.js for 
             <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
+            the backend, and MongoDB for data storage. Proficient in JavaScript, HTML, and CSS, I create 
             <br />
-            y dummy text of printingLorem
+            responsive and dynamic websites. I use GitHub for version control and VS Code as my primary 
             <br />
-            ispum is simpley dummy text of printing
-          </spane>
+            development environment.
+          </span>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>
           </Link>
@@ -54,19 +49,19 @@ const Works = () => {
           className="w-mainCircle"
         >
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <img src='https://cdn.iconscout.com/icon/free/png-256/free-react-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-4-pack-icons-282599.png?f=webp&w=256' height={200} width={200} style={{borderRadius:'50%'}} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png' height={200} width={200} style={{borderRadius:'50%'}} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            <img src='https://global.discourse-cdn.com/sitepoint/original/3X/b/5/b59a78e2ed76c705f3c0dcb300f3f222aefdcd99.png' height={200} width={200} style={{borderRadius:'50%'}} alt="" />
           </div>{" "}
           <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            <img src='https://images.seeklogo.com/logo-png/30/2/github-logo-png_seeklogo-304612.png?v=1958564572871810328' height={200} width={200} style={{borderRadius:'50%'}} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt="" />
+            <img src='https://www.svgrepo.com/download/303360/nodejs-logo.svg' height={200} width={200} style={{borderRadius:'50%'}} alt="" />
           </div>
         </motion.div>
         {/* background Circles */}
