@@ -45,7 +45,8 @@
 .testimonial>img{
     width: 6rem;
     height: 6rem;
-    border-radius: 100%;
+    border-radius: 10%;
+    margin-bottom: 10px;
 }
 .testimonial>span{
     color: var(--gray);

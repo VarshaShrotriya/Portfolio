@@ -5,47 +5,40 @@ import "swiper/css";
 
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
-import profilePic1 from "../../img/profile1.jpg";
-import profilePic2 from "../../img/profile2.jpg";
-import profilePic3 from "../../img/profile3.jpg";
-import profilePic4 from "../../img/profile4.jpg";
+import profilePic1 from "../../img/shopping.png";
+import profilePic2 from "../../img/portfolio.png";
+import profilePic3 from "../../img/MovieSearch.png";
 
 const Testimonial = () => {
   const clients = [
     {
-      img: profilePic1,
+      img:profilePic1,
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+        "Developed a full-stack e-commerce platform using Node.js, Express.js, and Mongo DB Ensured data integrity and security by integrating authentication middleware and encryption techniques.Designed responsive front-end interfaces using HTML5, CSS3, and JavaScript.",
     },
     {
-      img: profilePic2,
+      img:profilePic2,
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+        "Developed a responsive personal portfolio website using ReactJS.Using React hooks like useState and useContext for efficient state management and dark/light mode functionality. Integrated Email.js and enhanced interactivity with SwiperJS and Framer Motion. ",
     },
     {
-      img: profilePic3,
+      img:profilePic3,
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
-    },
-    {
-      img: profilePic4,
-      review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
-    },
+        "Built a movie search app using HTML, CSS, and JavaScript, integrating the Fetch API to fetch data from an external database. Designed an intuitive, visually appealing UI to enhance user experience. Implemented real-time search functionality with error handling for seamless usability.",
+    }
   ];
 
   return (
     <div className="t-wrapper" id="testimonial">
       <div className="t-heading">
-        <span>Clients always get </span>
-        <span>Exceptional Work </span>
-        <span>from me...</span>
+        <span>A Glimpse into </span>
+        <span>My Projects </span>
+        <span>😎...</span>
       <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>
       <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
 
       </div>
       <Swiper
-        // install Swiper modules
         modules={[Pagination]}
         slidesPerView={1}
         pagination={{ clickable: true }}
@@ -54,8 +47,9 @@ const Testimonial = () => {
           return (
             <SwiperSlide key={index}>
               <div className="testimonial">
-                <img src={client.img} alt="" />
-                <span>{client.review}</span>
+                <img style={{height:"200px", width:"200px"}} src={client.img} alt="" />
+                <span >{client.review}</span>
+                
               </div>
             </SwiperSlide>
           );

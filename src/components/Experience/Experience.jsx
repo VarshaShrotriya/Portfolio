@@ -8,7 +8,6 @@ const Experience = () => {
   return (
     <div className="experience" id='experience'>
       <div className="achievement">
-        {/* darkMode */}
         <div className="circle" style={{color: darkMode?'var(--orange)':''}}>67%</div>
         <span  style={{color: darkMode?'white':''}}>10th </span>
         <span>Percentage</span>
