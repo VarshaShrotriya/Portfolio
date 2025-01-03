@@ -28,6 +28,15 @@ const Portfolio = () => {
         <SwiperSlide>
           <img style={{height:"250px", width:"400px"}} src={MovieSearch} alt="" />
         </SwiperSlide>
+        <SwiperSlide>
+          <img style={{height:"250px", width:"400px"}} src={Shopping} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img style={{height:"250px", width:"400px"}} src={portfolio} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img style={{height:"250px", width:"400px"}} src={MovieSearch} alt="" />
+        </SwiperSlide>
       </Swiper>
     </div>
   );
